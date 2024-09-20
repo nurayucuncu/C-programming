@@ -26,7 +26,6 @@ int main() {
 	printf("Harf notunuz FD");
     else 
 	printf("Gecersiz puan girisi");
-    
 
 	
 	return 0;
