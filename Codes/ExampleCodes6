@@ -11,13 +11,13 @@ int main() {
     if(60<=puan && puan<=100)
 	printf("Statu: Gecer");
 	
-	else if(45<=puan && puan<=59)
+    else if(45<=puan && puan<=59)
 	printf("Statu: Kosullu Gecer");
 	
-	else if(puan<45)
+    else if(puan<45)
 	printf("Statu: Basarisiz");
 	
-	else
+    else
 	printf("Gecersiz puan girisimi");
     
 	return 0;
