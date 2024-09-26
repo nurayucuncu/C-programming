@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	
+    int secim,bakiye,tutar,bakiye1,bakiye2;
+    
+    printf("Bakiyenizi giriniz: ");
+    scanf("%d",&bakiye);
+    
+    printf("***ISLEMLER***\n");
+	printf("1-Para Cekme\n");
+	printf("2-Para Yatırma\n");
+	printf("3-Bakiye Sorgulama\n");
+	printf("4-Kart Iade\n");
+	printf("\nislem seciniz: ");
+	scanf("%d",&secim);
+	
+	
+    switch(secim)
+	{
+	case 1:
+	    printf("Bakiyeniz=%d\n",bakiye);
+	    printf("Cekmek istediginiz tutari giriniz: ");
+	    scanf("%d",&tutar);
+	    
+	    if(tutar>bakiye)
+		{
+		printf("Yetersiz tutar girdiniz\nYeniden giriniz: ");
+	    scanf("%d",&tutar);
+		}
+	    bakiye1=bakiye-tutar;
+	    printf("Yeni Bakiyeniz: %d",bakiye1);
+	    break;
+	case 2:
+	    printf("Bakiyeniz: %d\n",bakiye1);
+	    printf("Yatirmak istediginiz tutari giriniz: ");
+	    scanf("%d",&tutar);
+	    bakiye2=bakiye1+tutar;
+	    printf("Yeni Bakiyeniz: %d",bakiye2);
+	    break;
+	case 3:
+	    printf("Bakiyeniz: %d\n",bakiye2);
+	    break;	
+	case 4:
+	    printf("Kartinizi almayi unutmayin");
+	    break;			
+	}
+    
+ 
+    
+	return 0;
+}
