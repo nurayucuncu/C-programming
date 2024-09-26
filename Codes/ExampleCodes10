@@ -10,7 +10,7 @@ int main() {
     
     printf("***ISLEMLER***\n");
 	printf("1-Para Cekme\n");
-	printf("2-Para Yatýrma\n");
+	printf("2-Para YatÄ±rma\n");
 	printf("3-Bakiye Sorgulama\n");
 	printf("4-Kart Iade\n");
 	printf("\nislem seciniz: ");
